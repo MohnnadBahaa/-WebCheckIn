@@ -1,0 +1,195 @@
+.card {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.card-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.paper{
+  max-width: 420px;
+}
+
+.title{
+  font-family:'Staatliches', 'cursive';
+}
+
+.cardTextHeader{
+  color:whitesmoke;
+  font-weight:900;
+  font-size: 25px;
+
+}
+.cardTextContent{
+  color:whitesmoke;
+  font-weight:450;
+  font-size: 15px;
+
+}
+.icon{
+  width: 60px;
+
+
+}
+.iconHeader{
+  width: 100px;
+}
+
+.button1{
+  font-weight:450;
+  font-size: 20px;
+  color:red;
+
+}
+
+
+.button1:hover{
+  cursor: pointer;
+  font-size: 30px;
+  background-color: DodgerBlue;
+  color: white;
+  transition: color 5s, font-size 5s;
+  transition: background-color 5s;
+  -webkit-transition: color 5s, font-size 5s;
+  -webkit-transition:background-color 5s;
+}
+
+.button2{
+  font-weight:450;
+  font-size: 20px;
+  color:Gold;
+}
+.button2:hover{
+  cursor: pointer;
+  font-size: 30px;
+  background-color: DodgerBlue;
+  color: white;
+  transition: color 5s, font-size 5s;
+  transition: background-color 5s;
+  -webkit-transition: color 5s, font-size 5s;
+  -webkit-transition:background-color 5s;
+}
+
+
+.button3{
+  font-weight:450;
+  font-size: 20px;
+  color:green;
+}
+.button3:hover{
+  cursor: pointer;
+  font-size: 30px;
+  background-color: DodgerBlue;
+  color: white;
+  transition: color 5s, font-size 5s;
+  transition: background-color 5s;
+  -webkit-transition: color 5s, font-size 5s;
+  -webkit-transition:background-color 5s;
+}
+.info{
+  font-weight:650;
+  color:whitesmoke;
+  font-size: 20px;
+
+}
+
+.backIcon{
+  cursor: pointer;
+}
+
+/* rubber */
+.animated1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation: mymove 3s ;
+  animation-iteration-count: 1;
+}
+
+.animated2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation: mymove 6s infinite;
+
+}
+
+
+/*RUBBER BAND*/
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+@keyframes rubberBand{
+0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+30% {
+  -webkit-transform: scale3d(1.25, 0.75, 1);
+  transform: scale3d(1.25, 0.75, 1);
+}
+40% {
+  -webkit-transform: scale3d(0.75, 1.25, 1);
+  transform: scale3d(0.75, 1.25, 1);
+}
+50% {
+  -webkit-transform: scale3d(1.15, 0.85, 1);
+  transform: scale3d(1.15, 0.85, 1);
+}
+65% {
+  -webkit-transform: scale3d(.95, 1.05, 1);
+  transform: scale3d(.95, 1.05, 1);
+}
+75% {
+  -webkit-transform: scale3d(1.05, .95, 1);
+  transform: scale3d(1.05, .95, 1);
+}
+
+100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+}
+
+
+/*TADA*/
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+
+
+}
+
+
+
+@keyframes tada{
+
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+10%, 20% {
+  -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+}
+30%, 50%, 70%, 90% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+}
+40%, 60%, 80% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+}
+100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+}

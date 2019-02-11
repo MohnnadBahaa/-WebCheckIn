@@ -1,3 +1,54 @@
-<p>
-  passenger-tickets works!
-</p>
+
+<mat-card class="paper animated1 rubberBand">
+
+        <mat-grid-list cols="4" rowHeight="55px">
+            <mat-grid-tile  colspan="1" rowspan="1" >
+                <div  mat-card-avatar class="backIcon"><mat-icon>keyboard_backspace</mat-icon></div>
+            </mat-grid-tile>
+            <mat-grid-tile  colspan="1" rowspan="1" ></mat-grid-tile>
+            <mat-grid-tile  colspan="1" rowspan="1" ></mat-grid-tile>
+            <mat-grid-tile  colspan="1" rowspan="1" >
+                <img  class="iconHeader" src="../../assets/gifIcon/D65G.gif" alt="">
+            </mat-grid-tile>
+        </mat-grid-list>
+
+
+    <mat-card-title class="title">Passenger tickets </mat-card-title><br/>
+    <mat-card-subtitle>{{tickets.length}} tickets available</mat-card-subtitle>
+    <div ></div>
+<mat-card  class="card animated2 tada"  *ngFor=" let ticket of tickets; index as i">
+
+
+  <mat-card-content [style.background]="'DodgerBlue'">
+      <mat-grid-list cols="4" rowHeight="70px">
+          <mat-grid-tile class="cardTextHeader" colspan="1" rowspan="1" >{{ticket.country}}</mat-grid-tile>
+          <mat-grid-tile  colspan="2" rowspan="1" ><mat-icon><img  class="icon" src="../../assets/gifIcon/p3.gif" alt=""></mat-icon></mat-grid-tile>
+          <mat-grid-tile class="cardTextHeader" colspan="1" rowspan="1" >{{ticket.destination}}</mat-grid-tile>
+          <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >{{ticket.gate1}}</mat-grid-tile>
+          <mat-grid-tile  colspan="2" rowspan="1" ><mat-icon><img class="icon" src="" alt=""></mat-icon></mat-grid-tile>
+          <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >{{ticket.gate2}}</mat-grid-tile>
+        </mat-grid-list><br/>
+        <mat-grid-list cols="4" rowHeight="40px">
+            <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >Depart</mat-grid-tile>
+            <mat-grid-tile  class="cardTextContent" colspan="2" rowspan="1" >DATE</mat-grid-tile>
+            <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >ARRIVE</mat-grid-tile>
+            <mat-grid-tile class="info" colspan="1" rowspan="1" >{{ticket.gate1}}</mat-grid-tile>
+            <mat-grid-tile class="info" colspan="2" rowspan="1" >{{ticket.date}}</mat-grid-tile>
+            <mat-grid-tile class="info" colspan="1" rowspan="1" >{{ticket.gate2}}</mat-grid-tile>
+          </mat-grid-list>
+
+  </mat-card-content>
+  <mat-card-actions [style.background]="'whitesmoke'">
+      <mat-grid-list cols="3" rowHeight="60px">
+          <mat-grid-tile class="button1"  colspan="1" rowspan="1" >Refund</mat-grid-tile>
+          <mat-grid-tile class="button2" colspan="1" rowspan="1" >Change</mat-grid-tile>
+          <mat-grid-tile class="button3" colspan="1" rowspan="1" >Check-In</mat-grid-tile>
+      </mat-grid-list>
+
+  </mat-card-actions>
+</mat-card>
+</mat-card>
+
+
+
+
