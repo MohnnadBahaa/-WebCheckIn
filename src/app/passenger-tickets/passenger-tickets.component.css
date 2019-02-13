@@ -1,6 +1,7 @@
 .card {
   max-width: 400px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .card-header-image {
@@ -9,6 +10,13 @@
 }
 .paper{
   max-width: 420px;
+  height: auto;
+  background-color:white;
+
+}
+.centered{
+  margin: 0 auto;
+  width: 25%;
 }
 
 .title{
@@ -28,7 +36,9 @@
 
 }
 .icon{
-  width: 60px;
+
+   width:50%;
+   height: auto;
 
 
 }
@@ -36,60 +46,58 @@
   width: 100px;
 }
 
-.button1{
+/* Refund Button */
+.RefundButton{
   font-weight:450;
   font-size: 20px;
   color:red;
 
 }
 
-
-.button1:hover{
-  cursor: pointer;
-  font-size: 30px;
+.RefundButton:hover{
+  font-size: 22px;
   background-color: DodgerBlue;
   color: white;
-  transition: color 5s, font-size 5s;
-  transition: background-color 5s;
-  -webkit-transition: color 5s, font-size 5s;
-  -webkit-transition:background-color 5s;
+  border-radius: 20px;
+  transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
+  -webkit-transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
 }
 
-.button2{
+
+/* Change Button */
+.ChangeButton{
   font-weight:450;
   font-size: 20px;
   color:Gold;
 }
-.button2:hover{
-  cursor: pointer;
-  font-size: 30px;
+.ChangeButton:hover{
+  font-size: 22px;
   background-color: DodgerBlue;
   color: white;
-  transition: color 5s, font-size 5s;
-  transition: background-color 5s;
-  -webkit-transition: color 5s, font-size 5s;
-  -webkit-transition:background-color 5s;
+  border-radius: 20px;
+  transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
+  -webkit-transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
 }
 
-
-.button3{
+/* Check-IN */
+.CheckInButton{
   font-weight:450;
-  font-size: 20px;
+  font-size: 15px;
   color:green;
 }
-.button3:hover{
-  cursor: pointer;
-  font-size: 30px;
+.CheckInButton:hover{
+  font-size: 22px;
   background-color: DodgerBlue;
   color: white;
-  transition: color 5s, font-size 5s;
-  transition: background-color 5s;
-  -webkit-transition: color 5s, font-size 5s;
-  -webkit-transition:background-color 5s;
+  border-radius: 20px;
+  transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
+  -webkit-transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
+
+
 }
 .info{
   font-weight:650;
-  color:whitesmoke;
+  color:white;
   font-size: 20px;
 
 }
@@ -98,7 +106,19 @@
   cursor: pointer;
 }
 
-/* rubber */
+.path{
+  color:white;
+
+
+  transform: scale(3);
+
+}
+
+
+
+/* Animated Type */
+
+
 .animated1 {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -113,7 +133,28 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation: mymove 6s infinite;
+  animation: mymove 6s 1;
+  /* animation: mymove 6s infinite; */
+
+}
+
+.animated3{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation: mymove 2s 1;
+
+}
+
+.animated4{
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation: mymove 5s ;
+  animation-iteration-count: 1;
 
 }
 
@@ -193,3 +234,90 @@
   transform: scale3d(1, 1, 1);
 }
 }
+
+
+
+/*SWING*/
+
+
+.swing {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
+
+
+@keyframes swing{
+20% {
+  -webkit-transform: rotate3d(0, 0, 1, 15deg);
+  transform: rotate3d(0, 0, 1, 15deg);
+}
+40% {
+  -webkit-transform: rotate3d(0, 0, 1, -10deg);
+  transform: rotate3d(0, 0, 1, -10deg);
+}
+60% {
+  -webkit-transform: rotate3d(0, 0, 1, 5deg);
+  transform: rotate3d(0, 0, 1, 5deg);
+}
+80% {
+  -webkit-transform: rotate3d(0, 0, 1, -5deg);
+  transform: rotate3d(0, 0, 1, -5deg);
+}
+100% {
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+}
+}
+
+
+/*FADE IN DOWN*/
+
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown{
+
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+}
+
+
+
+
+/*ZOOM OUT*/
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}
+
+@keyframes zoomOut{
+0% {
+  opacity: 1;
+}
+50% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+}
+100% {
+  opacity: 0;
+}
+}
+
+/* test */
+
