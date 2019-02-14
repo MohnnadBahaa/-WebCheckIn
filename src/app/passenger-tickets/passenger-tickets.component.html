@@ -1,58 +1,74 @@
 
 
-<div class="centered">
 
-<mat-card class="paper animated1 fadeInDown"  >
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
 
-        <mat-grid-list cols="4" rowHeight="55px">
-            <mat-grid-tile  colspan="1" rowspan="1" >
-                <div  mat-card-avatar class="backIcon" ><mat-icon>keyboard_backspace</mat-icon></div>
+      <div class="col-sm-4">
+    <mat-card (mouseenter)="color='white'" [ngClass]="paper"  flex="25" >
 
-            </mat-grid-tile>
-            <mat-grid-tile  colspan="1" rowspan="1" ></mat-grid-tile>
-            <mat-grid-tile  colspan="1" rowspan="1" ></mat-grid-tile>
-            <mat-grid-tile  colspan="1" rowspan="1" >
-                <img  class="iconHeader" src="../../assets/gifIcon/D65G.gif" alt="">
-            </mat-grid-tile>
-        </mat-grid-list>
+            <mat-grid-list cols="4" rowHeight="55px">
+                <mat-grid-tile  colspan="1" rowspan="1" >
+                    <div (mouseenter)="color='black'" mat-card-avatar class="backIcon align-baseline" ><mat-icon>keyboard_backspace</mat-icon></div>
+
+                </mat-grid-tile>
+                <mat-grid-tile  colspan="1" rowspan="1" ></mat-grid-tile>
+                <mat-grid-tile  colspan="1" rowspan="1" ></mat-grid-tile>
+                <mat-grid-tile  colspan="1" rowspan="1" >
+                    <div class="spinner-grow" role="status" [style.color]="color">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                </mat-grid-tile>
+            </mat-grid-list>
 
 
-    <mat-card-title class="title">Passenger tickets </mat-card-title><br/>
-    <mat-card-subtitle>{{tickets.length}} tickets available</mat-card-subtitle>
-    <div ></div>
-<mat-card (click)="ticketBodyClick()" [ngClass]="selectTicketBodyIndex===i?ticketBody : 'card'" (mouseenter)="inHoverTicketBody(i)" (mouseleave)="outHoverTicketBody(i)" *ngFor=" let ticket of tickets; index as i">
+        <mat-card-title class="title">Passenger tickets </mat-card-title><br/>
+        <mat-card-subtitle class="ticketNumber">{{tickets.length}} tickets available</mat-card-subtitle>
+        <div ></div>
+    <mat-card  [ngClass]=" 'card animated4 fadeInDown '"  *ngFor=" let ticket of tickets; index as i">
 
-<!-- hinge animated -->
-  <mat-card-content [style.background]="'DodgerBlue'" class="animated4 fadeInDown ">
-      <mat-grid-list cols="4" rowHeight="70px">
-          <mat-grid-tile class="cardTextHeader" colspan="1" rowspan="1" >{{ticket.country}}</mat-grid-tile>
-          <mat-grid-tile  colspan="2" rowspan="1"  ><img  layout-fill class="icon" src="../../assets/gifIcon/p3.gif" alt=""></mat-grid-tile>
-          <mat-grid-tile class="cardTextHeader" colspan="1" rowspan="1" >{{ticket.destination}}</mat-grid-tile>
-          <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >{{ticket.gate1}}</mat-grid-tile>
-          <mat-grid-tile  colspan="2" rowspan="1" ><mat-icon class="path"   >linear_scale</mat-icon></mat-grid-tile>
-          <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >{{ticket.gate2}}</mat-grid-tile>
-        </mat-grid-list><br/>
-        <mat-grid-list cols="4" rowHeight="40px">
-            <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >Depart</mat-grid-tile>
-            <mat-grid-tile  class="cardTextContent" colspan="2" rowspan="1" >DATE</mat-grid-tile>
-            <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >ARRIVE</mat-grid-tile>
-            <mat-grid-tile class="info" colspan="1" rowspan="1" >{{ticket.gate1}}</mat-grid-tile>
-            <mat-grid-tile class="info" colspan="2" rowspan="1" >{{ticket.date}}</mat-grid-tile>
-            <mat-grid-tile class="info" colspan="1" rowspan="1" >{{ticket.gate2}}</mat-grid-tile>
+    <!-- hinge animated -->
+      <mat-card-content (click)="ticketBodyClick(i)" (mouseenter)="inHoverTicketBody(i)" (mouseleave)="outHoverTicketBody(i)" [ngClass]="clickedTicket===i?ticketHeader : 'cardBody'">
+          <mat-grid-list  cols="4" rowHeight="40px">
+              <mat-grid-tile  class="cardTextHeader gridList" colspan="1" rowspan="1" >{{ticket.country}}</mat-grid-tile>
+              <mat-grid-tile  colspan="2" rowspan="1" class="gridList"  ><mdb-icon class="planeIcom" fas icon="plane-departure"></mdb-icon></mat-grid-tile>
+              <mat-grid-tile class="cardTextHeader gridList" colspan="1" rowspan="1" >{{ticket.destination}}</mat-grid-tile>
+              <mat-grid-tile class="cardTextContent " colspan="1" rowspan="1" >{{ticket.gate1}}</mat-grid-tile>
+              <mat-grid-tile  colspan="2" rowspan="1" >
+                <mat-icon class="path"   >linear_scale</mat-icon>
+
+
+              </mat-grid-tile>
+              <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >{{ticket.gate2}}</mat-grid-tile>
+            </mat-grid-list><br/>
+            <mat-grid-list cols="4" rowHeight="30px">
+                <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >Depart</mat-grid-tile>
+                <mat-grid-tile  class="cardTextContent" colspan="2" rowspan="1" >DATE</mat-grid-tile>
+                <mat-grid-tile class="cardTextContent" colspan="1" rowspan="1" >ARRIVE</mat-grid-tile>
+                <mat-grid-tile class="info" colspan="1" rowspan="1" >{{ticket.gate1}}</mat-grid-tile>
+                <mat-grid-tile class="info" colspan="2" rowspan="1" >{{ticket.date}}</mat-grid-tile>
+                <mat-grid-tile class="info" colspan="1" rowspan="1" >{{ticket.gate2}}</mat-grid-tile>
+              </mat-grid-list>
+
+      </mat-card-content>
+      <mat-card-actions class="cardActionButton" >
+          <mat-grid-list cols="3" rowHeight="60px">
+              <!-- <mat-grid-tile   colspan="1" rowspan="1" ><button   name="Refund" (click)="clickButton(i,$event)" (mouseleave)="outHover()" (mouseenter)="inHover(i,$event)" [ngClass]=" selectTicketIndex===i && selectButtonName==='Refund' ? buttonClassRefund:'RefundButton'" mat-raised-button>Refund</button></mat-grid-tile> -->
+              <mat-grid-tile><button mdbBtn (mouseenter)="color='red'" class="borderRefund" type="button"  outline="true" mdbWavesEffect>Refund</button></mat-grid-tile>
+              <!-- <mat-grid-tile  colspan="1" rowspan="1" ><button   name="Change" (click)="clickButton(i,$event)" (mouseleave)="outHover()" (mouseenter)="inHover(i,$event)" [ngClass]=" selectTicketIndex===i && selectButtonName==='Change'? buttonClassChange:'ChangeButton'" mat-raised-button>Change</button></mat-grid-tile> -->
+              <mat-grid-tile><button (mouseenter)="color='gold'" mdbBtn class="borderChange" type="button"  outline="true" mdbWavesEffect> Change</button></mat-grid-tile>
+              <!-- <mat-grid-tile  colspan="1" rowspan="1" ><button   name="CheckIn" (click)="clickButton(i,$event)" (mouseleave)="outHover()" (mouseenter)="inHover(i,$event)" [ngClass]=" selectTicketIndex===i && selectButtonName==='CheckIn' ? buttonClassCheckIn:'CheckInButton'" mat-raised-button>CheckIn</button></mat-grid-tile> -->
+              <mat-grid-tile><button (mouseenter)="color='blue'" mdbBtn class="borderCheckIn" type="button" color="blue" outline="true" mdbWavesEffect><mdb-icon fas icon="user-check"></mdb-icon> Check-In</button></mat-grid-tile>
           </mat-grid-list>
 
-  </mat-card-content>
-  <mat-card-actions >
-      <mat-grid-list cols="3" rowHeight="60px">
-          <mat-grid-tile   colspan="1" rowspan="1" ><button   name="Refund" (click)="clickButton(i,$event)" (mouseleave)="outHover()" (mouseenter)="inHover(i,$event)" [ngClass]=" selectTicketIndex===i && selectButtonName==='Refund' ? buttonClassRefund:'RefundButton'" mat-raised-button>Refund</button></mat-grid-tile>
-          <mat-grid-tile  colspan="1" rowspan="1" ><button   name="Change" (click)="clickButton(i,$event)" (mouseleave)="outHover()" (mouseenter)="inHover(i,$event)" [ngClass]=" selectTicketIndex===i && selectButtonName==='Change'? buttonClassChange:'ChangeButton'" mat-raised-button>Change</button></mat-grid-tile>
-          <mat-grid-tile  colspan="1" rowspan="1" ><button   name="CheckIn" (click)="clickButton(i,$event)" (mouseleave)="outHover()" (mouseenter)="inHover(i,$event)" [ngClass]=" selectTicketIndex===i && selectButtonName==='CheckIn' ? buttonClassCheckIn:'CheckInButton'" mat-raised-button>CheckIn</button></mat-grid-tile>
-      </mat-grid-list>
+      </mat-card-actions>
+    </mat-card>
+    </mat-card>
+    </div>
+    </div>
+    </div>
 
-  </mat-card-actions>
-</mat-card>
-</mat-card>
-</div>
+
 
 
 

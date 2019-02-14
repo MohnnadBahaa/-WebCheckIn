@@ -1,11 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import {
-  trigger,
-  transition,
-  state,
-  animate,
-  style
-} from "@angular/animations";
+import {GetTicketDetealiesService} from '../get-ticket-detealies.service'
+
 
 @Component({
   selector: "app-passenger-tickets",
@@ -14,13 +9,16 @@ import {
   animations: []
 })
 export class PassengerTicketsComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {
+  constructor(private ticketDetealis : GetTicketDetealiesService) {
 
   }
 
-  // variable section
+  ngOnInit() {
+    console.log(this.ticketDetealis.get())
+
+  }
+
+  // variable section GetTicketDetealiesService
 
   // Test Data
   public destination: string = "";
@@ -75,10 +73,29 @@ export class PassengerTicketsComponent implements OnInit {
     animated:false
   };
 
+  public ticketHeader={
+    hinge:false,
+    animated:false
+
+  }
+  public paper={
+    animated1:true,
+    fadeInDown:true,
+    paper:true,
+    flipOutY:false,
+    animated :false
+
+  }
+
+
+
   // the index of the hover ticket
   public selectTicketIndex = -1;
   public selectButtonName='';
   public selectTicketBodyIndex=-1;
+  public clickedTicket=-1;
+  public color='white';
+
 
   // Method section
 
@@ -119,17 +136,17 @@ export class PassengerTicketsComponent implements OnInit {
 
 // change the class when the user hover on the ticket body
   inHoverTicketBody(i){
-    console.log(i)
     this.selectTicketBodyIndex=i;
-    this.ticketBody.animated3=true;
-    this.ticketBody.tada=true;
+    this.color='lightblue'
+
+
   }
   // change the class when the user hover out the ticket body
   outHoverTicketBody(i){
-    console.log(i)
+
     this.selectTicketBodyIndex=-1;
-    this.ticketBody.animated3=false;
-    this.ticketBody.tada=false;
+    this.color='white'
+
   }
 
   // when the user click the button
@@ -162,14 +179,16 @@ export class PassengerTicketsComponent implements OnInit {
   }
 
     // when the user click the ticket body
-    ticketBodyClick(){
-      this.ticketBody.animated3=false;
-      this.ticketBody.tada=false;
-      this.ticketBody.hinge=true;
-      this.ticketBody.animated=true;
+    ticketBodyClick(i){
 
+      this.paper.animated1=false;
+      this.paper.fadeInDown=false;
+      this.paper.flipOutY=true;
+      this.paper.animated=true;
 
     }
+
+
 }
 
 

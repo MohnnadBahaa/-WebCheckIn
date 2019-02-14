@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {GetTicketDetealiesService} from '../app/get-ticket-detealies.service'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
     [MatButtonModule,MatCheckboxModule,MatCardModule,MatIconModule,MatGridListModule]
   ],
-  providers: [],
+  providers: [GetTicketDetealiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

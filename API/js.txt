@@ -1,0 +1,306 @@
+{
+	"_warnings": {
+		"_meta": {
+			"class": "WarningCollection"
+		},
+		"_collection": []
+	},
+	"_meta": {
+		"class": "PNRCollection"
+	},
+	"_collection": [{
+		"carts": {
+			"_meta": {
+				"class": "CartPNRCollection"
+			},
+			"_collection": [{
+				"_meta": {
+					"class": "CartPNR",
+					"cartId": "4abbb318-a21a-4ac8-95d7-cae5bb0d4176",
+					"cartExpirationTimeInSeconds": 900,
+					"total": {
+						"currency": {
+							"_meta": {
+								"class": "CurrencyValue"
+							},
+							"currencyCode": "USD",
+							"base": 0,
+							"taxDetails": {
+								
+							},
+							"totalTax": 0,
+							"taxDetailsRefundable": {
+								
+							},
+							"totalTaxRefundable": 0,
+							"total": 0
+						},
+						"points": 0
+					}
+				},
+				"legCode": "MEX_AM_0583_2019-02-06",
+				"toHavana": false,
+				"isETA": false,
+				"machineReadableRequired": false,
+				"travelersCode": "A1_C0_I0_PH0_PC0",
+				"travelerInfo": {
+					"_meta": {
+						"class": "BookedTravelerCollection"
+					},
+					"_collection": [{
+						"_meta": {
+							"class": "BookedTraveler"
+						},
+						"checkinStatus": false,
+						"showEmailCapture": false,
+						"isEligibleToCheckin": false,
+						"isSelectedToCheckin": false,
+						"missingCheckinRequiredFields": [],
+						"infant": null,
+						"paxType": "ADULT",
+						"couponCode": null,
+						"ticketNumber": "1392107027738",
+						"allTicketNumbers": ["1392107027738"],
+						"ticketNumbers": null,
+						"benefitRedeemedCollection": {
+							"_meta": {
+								"class": "BenefitRedeemedCollection"
+							},
+							"_collection": []
+						},
+						"ancillaries": {
+							"_meta": {
+								"class": "BookedTravelerAncillaryCollection"
+							},
+							"_collection": []
+						},
+						"segmentChoices": {
+							"_meta": {
+								"class": "BookedSegmentChoiceCollection"
+							},
+							"_collection": []
+						},
+						"bookingClasses": {
+							"_meta": {
+								"class": "BookingClassMap"
+							},
+							"_collection": []
+						},
+						"itineraryBookingClasses": {
+							"_meta": {
+								"class": "BookingClassMap"
+							},
+							"_collection": [{
+								"segmentCode": "MEX_CUN_AM_2019-02-06_0100",
+								"bookingClass": "Y",
+								"bookingCabin": "Y",
+								"passengerId": null
+							}]
+						},
+						"fareBasisCodes": {
+							"_meta": {
+								"class": "FareBasisEntryMap"
+							},
+							"_collection": [{
+								"segmentCode": "MEX_CUN_AM_2019-02-06_0100",
+								"fareBasisCode": "QLNN0QFM"
+							}]
+						},
+						"couponNumbers": {
+							"_meta": {
+								"class": "CouponEntryMap"
+							},
+							"_collection": [{
+								"segmentCode": "MEX_CUN_AM_2019-02-06_0100",
+								"couponNumber": 1
+							}]
+						},
+						"ineligibleReasons": ["FLIGHT_NOT_INITIALIZED"],
+						"nameRefNumber": null,
+						"passengerType": null,
+						"checkedBags": null,
+						"checkinNumber": null,
+						"selectee": false,
+						"overBookingInfo": null,
+						"onStandByList": false,
+						"onUpgradeList": false,
+						"changeSeatAllowed": true,
+						"mealSelectionAllowed": null,
+						"mealSelected": null,
+						"displayName": "SAMMY ALNAJAR",
+						"firstName": "SAMMY",
+						"middleName": null,
+						"lastName": "ALNAJAR",
+						"prefix": null,
+						"id": null,
+						"phones": null,
+						"email": null,
+						"savedEmails": null,
+						"ssrRemarks": null,
+						"freeBaggageAllowance": {
+							"personal": 1,
+							"carryOn": 1,
+							"checked": 0,
+							"checkedMaxWeight": 25,
+							"checkedWeightUnit": "KG"
+						},
+						"freeBaggageAllowancePerLegsArray": null,
+						"gender": null,
+						"dateOfBirth": null,
+						"frequentFlyerProgram": null,
+						"frequentFlyerNumber": null,
+						"corporateFrequentFlyerProgram": null,
+						"corporateFrequentFlyerNumber": null,
+						"loyalty": null,
+						"redressNumber": null,
+						"ktn": null,
+						"travelDocument": null,
+						"timaticInfo": null,
+						"visaInfo": null,
+						"visaInfoAlreadySent": false,
+						"etaAlreadySent": false,
+						"returningDateAlreadySent": false,
+						"countryOfResidence": null,
+						"destinationAddress": null,
+						"declinedEmergencyContact": false,
+						"emergencyContact": null,
+						"benefit": null,
+						"isOverBookingEligible": false,
+						"isSkyPriority": false
+					}]
+				},
+				"itineraryDependentTravelerFields": null,
+				"upsellOffers": {
+					"_meta": {
+						"class": "CabinUpgradeAncillaryCollection"
+					},
+					"_collection": []
+				},
+				"_warnings": null,
+				"car": null,
+				"carReference": null
+			}]
+		},
+		"boardingPassId": "LWSVNZ",
+		"overBooking": null,
+		"bookedCar": false,
+		"volunteerOffer": true,
+		"formOfPayment": ["CA"],
+		"tsaRequired": false,
+		"manageStatus": "CLOSED",
+		"_meta": {
+			"class": "PNR"
+		},
+		"pnr": "LWSVNZ",
+		"legs": {
+			"_meta": {
+				"class": "BookedLegCollection"
+			},
+			"_collection": [{
+				"remainingTimeToBoard": 0,
+				"domestic": false,
+				"_meta": {
+					"class": "BookedLeg"
+				},
+				"estimatedDepartureTime": null,
+				"scheduledDepartureTime": null,
+				"boardingTime": null,
+				"boardingTerminal": "2",
+				"boardingGate": "TBD",
+				"cabin": null,
+				"flightStatus": "ON_TIME",
+				"checkinStatus": "OPEN",
+				"manageStatus": "CLOSED",
+				"segments": {
+					"_meta": {
+						"class": "BookedSegmentCollection"
+					},
+					"_collection": [{
+						"_meta": {
+							"class": "BookedSegment"
+						},
+						"checkinIneligibleReasons": [],
+						"segment": {
+							"_meta": {
+								"class": "Segment"
+							},
+							"segmentCode": "MEX_CUN_AM_2019-02-06_0100",
+							"fareBasisCode": "QLNN0QFM",
+							"fareFamily": "FLEXIBLE",
+							"fareAndCabinName": "FLEXIBLE_FARE_TOURIST_CABIN",
+							"departureAirport": "MEX",
+							"departureDateTime": "2019-02-06T01:00:00",
+							"timeZoneName": "Central Standard Time",
+							"timeZoneId": "America/Mexico_City",
+							"dstOffset": 0,
+							"rawOffset": -21600,
+							"arrivalTimeZoneName": "Eastern Standard Time",
+							"arrivalTimeZoneId": "America/Cancun",
+							"arrivalDstOffset": 0,
+							"arrivalRawOffset": -18000,
+							"arrivalAirport": "CUN",
+							"arrivalDateTime": "2019-02-06T04:10:00",
+							"stops": [],
+							"flightDurationInMinutes": 130,
+							"layoverToNextSegmentsInMinutes": 0,
+							"aircraftType": "7S8",
+							"operatingCarrier": "AM",
+							"operatingFlightCode": "0583",
+							"marketingCarrier": "AM",
+							"marketingFlightCode": "0583",
+							"amenitiesPremiumCabin": {
+								"complimentaryFeatures": ["SNP",
+								"ADP"],
+								"paidFeatures": []
+							},
+							"amenitiesMainCabin": {
+								"complimentaryFeatures": ["SN",
+								"AD"],
+								"paidFeatures": []
+							},
+							"isPremierAvailable": true,
+							"segmentStatus": "HK",
+							"boardingTime": null,
+							"boardingTerminal": "2",
+							"boardingGate": "TBD",
+							"capacity": null,
+							"bookingClass": "Y",
+							"cabin": "main",
+							"flightStatus": "ON_TIME",
+							"checkinStatus": null,
+							"estimatedDepartureTime": null,
+							"scheduledDepartureTime": null,
+							"domestic": true,
+							"codeShare": false,
+							"daysBeforeDeparture": 0,
+							"passFlight": false
+						}
+					}],
+					"legCode": "MEX_AM_0583_2019-02-06",
+					"legType": "NON-STOP",
+					"totalFlightTimeInMinutes": 130
+				},
+				"standByReservation": false,
+				"groundHandled": false,
+				"closedForEarlyChk": false,
+				"priorityReservation": false,
+				"onStandByList": false,
+				"onUpgradeList": false,
+				"paxOnStandByList": 0,
+				"paxOnUpgradeList": 0,
+				"standByListPaxLimit": 0,
+				"checkInRestrictedByStandbyConstraint": false,
+				"regionKey": "MX",
+				"marketFlight": "DOMESTIC",
+				"seatSelectionType": "SHOW_SEATMAP",
+				"firstBagPolicyType": null,
+				"itineraryPartType": "OUTBOUND",
+				"lookUpTime": 13,
+				"isGroundedReservation": false
+			}]
+		},
+		"creationDate": "2019-02-05T11:23",
+		"flightItineraryType": "ONEWAY",
+		"globalMarketFlight": "DOMESTIC"
+	}]
+}

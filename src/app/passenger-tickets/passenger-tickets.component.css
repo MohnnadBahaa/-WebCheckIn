@@ -1,7 +1,49 @@
 .card {
-  max-width: 400px;
+  max-width:100%;
   margin-top: 20px;
+  padding: 0px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+}
+
+
+
+.gridList{
+  padding-top: 25px !important;
+  height: calc(60px) !important;
+}
+
+.cardBody{
+  width:100%;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   cursor: pointer;
+  background-color: rgb(100, 192, 228);
+
+}
+.cardBody:hover{
+  background-color:blue;
+  transition:background-color 5s;
+  -webkit-transition:background-color 5s;
+
+}
+
+.ticketNumber{
+  font-family:'Staatliches', 'cursive';
+  font-size: 18px;
+
+
+}
+
+.ticketNumber:hover{
+
+}
+.cardActionButton{
+  padding-top: 0px;
+  padding-right: 10px;
+
 }
 
 .card-header-image {
@@ -9,15 +51,54 @@
   background-size: cover;
 }
 .paper{
-  max-width: 420px;
+  width: 80%;
   height: auto;
   background-color:white;
+  padding-bottom: 30px;
+
+
 
 }
-.centered{
-  margin: 0 auto;
-  width: 25%;
+.paper:hover{
+  box-shadow: 0 2px 5px 0 rgb(123, 123, 204);
+
 }
+
+.borderCheckIn{
+  border: none !important;
+  box-shadow: none;
+  margin-right: 5px;
+  font-weight:450;
+  padding: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.borderCheckIn:hover{
+  box-shadow: 0 2px 5px 0 blue;
+}
+
+.borderChange{
+  border: none !important;
+  box-shadow: none;
+  color: gold;
+  font-weight:450;
+  font-size: 15px;
+}
+.borderChange:hover{
+  box-shadow: 0 2px 5px 0 rgb(207, 207, 84);
+}
+.borderRefund{
+  border: none !important;
+  box-shadow: none;
+  color:red;
+  font-weight:450;
+  font-size: 15px;
+
+}
+.borderRefund:hover{
+  box-shadow: 0 2px 5px 0 rgb(240, 105, 81);
+}
+
 
 .title{
   font-family:'Staatliches', 'cursive';
@@ -26,13 +107,13 @@
 .cardTextHeader{
   color:whitesmoke;
   font-weight:900;
-  font-size: 25px;
+  font-size: 35px;
 
 }
 .cardTextContent{
   color:whitesmoke;
-  font-weight:450;
-  font-size: 15px;
+  font-weight:350;
+  font-size: 20px;
 
 }
 .icon{
@@ -104,13 +185,24 @@
 
 .backIcon{
   cursor: pointer;
+
+}
+.backIcon:hover{
+  transform: scale(2);
+  transition:transform 3s;
+  -webkit-transition:transform 3s;
+
+
 }
 
 .path{
   color:white;
-
-
   transform: scale(3);
+}
+
+.planeIcom{
+  color:white;
+  transform: scale(2);
 
 }
 
@@ -149,11 +241,11 @@
 
 .animated4{
 
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation: mymove 5s ;
+  animation: mymove 6s ;
   animation-iteration-count: 1;
 
 }
