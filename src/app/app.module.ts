@@ -10,12 +10,14 @@ import { MatCardModule } from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {GetTicketDetealiesService} from '../app/get-ticket-detealies.service'
+import {GetTicketDetealiesService} from '../app/get-ticket-detealies.service';
+import { MainComponent } from './main/main.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    PassengerTicketsComponent
+    PassengerTicketsComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
