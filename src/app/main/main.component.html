@@ -1,3 +1,40 @@
-<p>
-  main works!
-</p>
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+    <div class="col-xl-4 loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <mat-card (mouseenter)="color = 'white'" [ngClass]="paper" flex="25">
+      <div class="card-header">
+        <div class="d-flex justify-content-end social_icon">
+          <span>Check In</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-barcode"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your NAME,PNR ... "
+            />
+          </div>
+
+          <div class="form-group">
+            <button type="button" class="btn btn-info btn-lg btn3d">
+              Check In
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer"></div>
+    </mat-card>
+    <h1>Jarnet Soluation</h1>
+  </div>
+</div>

@@ -1,415 +1,382 @@
 .card {
-  max-width:100%;
-  margin-top: 20px;
-  padding: 0px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 0px;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
-
-
-.gridList{
-  padding-top: 25px !important;
-  height: calc(60px) !important;
+.gridList {
+    padding-top: 25px !important;
+    height: calc(60px) !important;
 }
 
-.cardBody{
-  width:100%;
-  border-radius: 10px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  cursor: pointer;
-  background-color: rgb(100, 192, 228);
-
-}
-.cardBody:hover{
-  background-color:blue;
-  transition:background-color 5s;
-  -webkit-transition:background-color 5s;
-
+.cardBody {
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    cursor: pointer;
+    background-color: rgb(100, 192, 228);
 }
 
-.ticketNumber{
-  font-family:'Staatliches', 'cursive';
-  font-size: 18px;
-
-
+.cardBody:hover {
+    background-color: blue;
+    transition: background-color 5s;
+    -webkit-transition: background-color 5s;
 }
 
-.ticketNumber:hover{
-
+.ticketNumber {
+    font-family: 'Staatliches', 'cursive';
+    font-size: 18px;
 }
-.cardActionButton{
-  padding-top: 0px;
-  padding-right: 10px;
 
+.ticketNumber:hover {}
+
+.cardActionButton {
+    padding-top: 0px;
+    padding-right: 10px;
 }
 
 .card-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-.paper{
-  width: 80%;
-  height: auto;
-  background-color:white;
-  padding-bottom: 30px;
-
-
-
-}
-.paper:hover{
-  box-shadow: 0 2px 5px 0 rgb(123, 123, 204);
-
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
 }
 
-.borderCheckIn{
-  border: none !important;
-  box-shadow: none;
-  margin-right: 5px;
-  font-weight:450;
-  padding: 13px;
-  padding-right: 25px;
-  padding-left: 25px;
-}
-.borderCheckIn:hover{
-  box-shadow: 0 2px 5px 0 blue;
+.paper {
+    width: 80%;
+    height: auto;
+    background-color: white;
+    padding-bottom: 30px;
 }
 
-.borderChange{
-  border: none !important;
-  box-shadow: none;
-  color: gold;
-  font-weight:450;
-  font-size: 15px;
-}
-.borderChange:hover{
-  box-shadow: 0 2px 5px 0 rgb(207, 207, 84);
-}
-.borderRefund{
-  border: none !important;
-  box-shadow: none;
-  color:red;
-  font-weight:450;
-  font-size: 15px;
-
-}
-.borderRefund:hover{
-  box-shadow: 0 2px 5px 0 rgb(240, 105, 81);
+.paper:hover {
+    box-shadow: 0 2px 5px 0 rgb(123, 123, 204);
 }
 
-
-.title{
-  font-family:'Staatliches', 'cursive';
+.borderCheckIn {
+    border: none !important;
+    box-shadow: none;
+    margin-right: 5px;
+    font-weight: 450;
+    padding: 13px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
-.cardTextHeader{
-  color:whitesmoke;
-  font-weight:900;
-  font-size: 35px;
-
+.borderCheckIn:hover {
+    box-shadow: 0 2px 5px 0 blue;
 }
-.cardTextContent{
-  color:whitesmoke;
-  font-weight:350;
-  font-size: 20px;
 
+.borderChange {
+    border: none !important;
+    box-shadow: none;
+    color: gold;
+    font-weight: 450;
+    font-size: 15px;
 }
-.icon{
 
-   width:50%;
-   height: auto;
-
-
+.borderChange:hover {
+    box-shadow: 0 2px 5px 0 rgb(207, 207, 84);
 }
-.iconHeader{
-  width: 100px;
+
+.borderRefund {
+    border: none !important;
+    box-shadow: none;
+    color: red;
+    font-weight: 450;
+    font-size: 15px;
+}
+
+.borderRefund:hover {
+    box-shadow: 0 2px 5px 0 rgb(240, 105, 81);
+}
+
+.title {
+    font-family: 'Staatliches', 'cursive';
+}
+
+.cardTextHeader {
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.cardTextContent {
+    color: whitesmoke;
+    font-weight: 350;
+    font-size: 20px;
+}
+
+.icon {
+    width: 50%;
+    height: auto;
+}
+
+.iconHeader {
+    width: 100px;
 }
 
 /* Refund Button */
-.RefundButton{
-  font-weight:450;
-  font-size: 20px;
-  color:red;
 
+.RefundButton {
+    font-weight: 450;
+    font-size: 20px;
+    color: red;
 }
 
-.RefundButton:hover{
-  font-size: 22px;
-  background-color: DodgerBlue;
-  color: white;
-  border-radius: 20px;
-  transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
-  -webkit-transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
+.RefundButton:hover {
+    font-size: 22px;
+    background-color: DodgerBlue;
+    color: white;
+    border-radius: 20px;
+    transition: color 5s, font-size 5s, background-color 5s, border-radius 5s;
+    -webkit-transition: color 5s, font-size 5s, background-color 5s, border-radius 5s;
 }
-
 
 /* Change Button */
-.ChangeButton{
-  font-weight:450;
-  font-size: 20px;
-  color:Gold;
+
+.ChangeButton {
+    font-weight: 450;
+    font-size: 20px;
+    color: Gold;
 }
-.ChangeButton:hover{
-  font-size: 22px;
-  background-color: DodgerBlue;
-  color: white;
-  border-radius: 20px;
-  transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
-  -webkit-transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
+
+.ChangeButton:hover {
+    font-size: 22px;
+    background-color: DodgerBlue;
+    color: white;
+    border-radius: 20px;
+    transition: color 5s, font-size 5s, background-color 5s, border-radius 5s;
+    -webkit-transition: color 5s, font-size 5s, background-color 5s, border-radius 5s;
 }
 
 /* Check-IN */
-.CheckInButton{
-  font-weight:450;
-  font-size: 15px;
-  color:green;
-}
-.CheckInButton:hover{
-  font-size: 22px;
-  background-color: DodgerBlue;
-  color: white;
-  border-radius: 20px;
-  transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
-  -webkit-transition:color 5s, font-size 5s,background-color 5s,border-radius 5s;
 
-
-}
-.info{
-  font-weight:650;
-  color:white;
-  font-size: 20px;
-
+.CheckInButton {
+    font-weight: 450;
+    font-size: 15px;
+    color: green;
 }
 
-.backIcon{
-  cursor: pointer;
-
-}
-.backIcon:hover{
-  transform: scale(2);
-  transition:transform 3s;
-  -webkit-transition:transform 3s;
-
-
+.CheckInButton:hover {
+    font-size: 22px;
+    background-color: DodgerBlue;
+    color: white;
+    border-radius: 20px;
+    transition: color 5s, font-size 5s, background-color 5s, border-radius 5s;
+    -webkit-transition: color 5s, font-size 5s, background-color 5s, border-radius 5s;
 }
 
-.path{
-  color:white;
-  transform: scale(3);
+.info {
+    font-weight: 650;
+    color: white;
+    font-size: 20px;
 }
 
-.planeIcom{
-  color:white;
-  transform: scale(2);
-
+.backIcon {
+    cursor: pointer;
 }
 
+.backIcon:hover {
+    transform: scale(2);
+    transition: transform 3s;
+    -webkit-transition: transform 3s;
+}
 
+.path {
+    color: white;
+    transform: scale(3);
+}
+
+.planeIcom {
+    color: white;
+    transform: scale(2);
+}
 
 /* Animated Type */
 
-
 .animated1 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation: mymove 3s ;
-  animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 3s;
+    animation-iteration-count: 1;
 }
 
 .animated2 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation: mymove 6s 1;
-  /* animation: mymove 6s infinite; */
-
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 6s 1;
+    /* animation: mymove 6s infinite; */
 }
 
-.animated3{
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation: mymove 2s 1;
-
+.animated3 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 2s 1;
 }
 
-.animated4{
-
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation: mymove 6s ;
-  animation-iteration-count: 1;
-
+.animated4 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 6s;
+    animation-iteration-count: 1;
 }
-
 
 /*RUBBER BAND*/
 
 .rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
 }
 
-@keyframes rubberBand{
-0% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+@keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }
-30% {
-  -webkit-transform: scale3d(1.25, 0.75, 1);
-  transform: scale3d(1.25, 0.75, 1);
-}
-40% {
-  -webkit-transform: scale3d(0.75, 1.25, 1);
-  transform: scale3d(0.75, 1.25, 1);
-}
-50% {
-  -webkit-transform: scale3d(1.15, 0.85, 1);
-  transform: scale3d(1.15, 0.85, 1);
-}
-65% {
-  -webkit-transform: scale3d(.95, 1.05, 1);
-  transform: scale3d(.95, 1.05, 1);
-}
-75% {
-  -webkit-transform: scale3d(1.05, .95, 1);
-  transform: scale3d(1.05, .95, 1);
-}
-
-100% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-}
-
-}
-
 
 /*TADA*/
 
 .tada {
-  -webkit-animation-name: tada;
-  animation-name: tada;
-
-
+    -webkit-animation-name: tada;
+    animation-name: tada;
 }
 
-
-
-@keyframes tada{
-
-  0% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }
-10%, 20% {
-  -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-  transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-}
-30%, 50%, 70%, 90% {
-  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-}
-40%, 60%, 80% {
-  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-}
-100% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-}
-}
-
-
 
 /*SWING*/
 
-
 .swing {
-  -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
-  transform-origin: top center;
-  -webkit-animation-name: swing;
-  animation-name: swing;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
 }
 
-
-@keyframes swing{
-20% {
-  -webkit-transform: rotate3d(0, 0, 1, 15deg);
-  transform: rotate3d(0, 0, 1, 15deg);
+@keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
 }
-40% {
-  -webkit-transform: rotate3d(0, 0, 1, -10deg);
-  transform: rotate3d(0, 0, 1, -10deg);
-}
-60% {
-  -webkit-transform: rotate3d(0, 0, 1, 5deg);
-  transform: rotate3d(0, 0, 1, 5deg);
-}
-80% {
-  -webkit-transform: rotate3d(0, 0, 1, -5deg);
-  transform: rotate3d(0, 0, 1, -5deg);
-}
-100% {
-  -webkit-transform: rotate3d(0, 0, 1, 0deg);
-  transform: rotate3d(0, 0, 1, 0deg);
-}
-}
-
 
 /*FADE IN DOWN*/
 
-
 .fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
 }
 
-@keyframes fadeInDown{
-
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
-100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-}
-}
-
-
-
 
 /*ZOOM OUT*/
 
 .zoomOut {
-  -webkit-animation-name: zoomOut;
-  animation-name: zoomOut;
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
 }
 
-@keyframes zoomOut{
-0% {
-  opacity: 1;
-}
-50% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
-}
-100% {
-  opacity: 0;
-}
+@keyframes zoomOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 /* test */
-
